@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/fast-campus-spring-security.iml" filepath="$PROJECT_DIR$/fast-campus-spring-security.iml" />
-      <module fileurl="file://$PROJECT_DIR$/part-5-project-movie-service/part-5-project-movie-service.iml" filepath="$PROJECT_DIR$/part-5-project-movie-service/part-5-project-movie-service.iml" />
     </modules>
   </component>
 </project>

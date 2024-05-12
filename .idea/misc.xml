@@ -6,8 +6,9 @@
     <file type="web" url="file://$PROJECT_DIR$/part-2-advanced-spring-security" />
     <file type="web" url="file://$PROJECT_DIR$/part-3-jwtandoauth2" />
     <file type="web" url="file://$PROJECT_DIR$/part-4-test-with-spring-security" />
+    <file type="web" url="file://$PROJECT_DIR$/part-5-project-movie-service" />
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" project-jdk-name="temurin-17" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
