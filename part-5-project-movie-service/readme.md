@@ -108,3 +108,42 @@
 - 어드민에 의해 제한이 되면 BLOCKED
     - 다시 ACTIVE 로 돌아갈 수 있음
 - 회원 탈퇴를 하면 INACTIVE
+
+## API 명세
+
+### 사용자, 회원
+
+- 로그인 - POST /api/v1/user/{userId}/login
+- 로그아웃 - POST /api/v1/user/{userId}/logout
+- 회원가입 - POST /api/v1/user/{userId}/signup
+- 이메일 중복 조회 - POST /api/v1/user/{userId}/email/duplicate
+- 닉네임 중복 조회 - POST /api/v1/user/{userId}/nickname/duplicate
+- 회원정보 조회 - GET /api/v1/user/{userId}
+- 회원정보 수정 - PUT /api/v1/user/{userId}
+- 비밀번호 조회 - GET /api/v1/user/{userId}/password
+- 비밀번호 변경 - PUT /api/v1/user/{userId}/password
+- 회원 탈퇴 - DEL /api/v1/user/{userId}
+
+### 인증
+- 토큰 생성 - POST /api/v1/auth/access-token/reissue
+
+### 프로필
+
+- 프로필 목록 조회 - GET /api/v1/user/{userId}/profile
+- 프로필 상세 조회 - GET /api/v1/user/{userId}/profile/{profileId}
+- 프로필 수정 - PUT /api/v1/user/{userId}/profile/{profileId}
+
+### 상품 (영화)
+
+- 영화 목록 조회 - GET /api/v1/movie/list
+- 영화 상세 조회 - GET /api/v1/movie/{movieId}/detail
+- 컨텐츠 다운로드 - POST /api/v1/movie/{movieId}/download
+
+### 어드민
+
+- 사용자 제한 처리 - POST /api/v1/admin/user/{userId}/block
+- 사용자 목록 조회 - POST /api/v1/admin/user/search
+- 멤버십 신규 등록 - POST /api/v1/admin/membership/register
+- 기존 멤버십 수정 - PUT /api/v1/admin/membership/{membershipId}
+- 멤버십 삭제 - DEL /api/v1/admin/membership/{membershipId}
+- 멤버십 조회 - GET /api/v1/admin/membership/{membershipId}
